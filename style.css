@@ -1,0 +1,356 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0d0d0d;
+    color: white;
+}
+
+/* NAVIGATION BAR */
+header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #151515;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    color: #ff4f91;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff4f91;
+}
+
+/* GENERAL TITLES */
+.welcome {
+    color: #ff4f91;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+h1 span,
+h2 span {
+    color: #ff4f91;
+}
+
+/* HOME PAGE */
+.home {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.description {
+    color: #bdbdbd;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff4f91;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #e52d76;
+    transform: translateY(-3px);
+}
+
+/* CARDS */
+.home-cards,
+.about,
+.contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.card-subtitle,
+.about-intro,
+.contact-intro {
+    color: #bdbdbd;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: #191919;
+    border: 1px solid #303030;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #ff4f91;
+}
+
+.card h2 {
+    color: #ff4f91;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    color: #ff4f91;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* ABOUT PAGE */
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    background: #191919;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 35px auto;
+    max-width: 850px;
+    text-align: left;
+}
+
+.profile-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff4f91;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-text h2 {
+    margin-bottom: 15px;
+}
+
+.profile-text p {
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.section-title {
+    margin: 50px 0 25px;
+    color: #ff4f91;
+}
+
+.personal-info {
+    background: #191919;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.personal-info h2 {
+    color: #ff4f91;
+    margin-bottom: 20px;
+}
+
+.personal-info p {
+    color: #ccc;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contact-card {
+    background: #191919;
+    border: 1px solid #303030;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff4f91;
+}
+
+.contact-card h2 {
+    color: #ff4f91;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: #bdbdbd;
+    line-height: 1.6;
+}
+
+.contact-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff4f91;
+    text-decoration: none;
+}
+
+/* MESSAGE BOX - IF INCLUDED */
+.message-box {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #191919;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.message-box input,
+.message-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #252525;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    outline: none;
+}
+
+.message-box input:focus,
+.message-box textarea:focus {
+    border-color: #ff4f91;
+}
+
+.message-box textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.message-box button {
+    padding: 12px 28px;
+    background: #ff4f91;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #151515;
+    color: #999;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .home {
+        padding: 60px 7%;
+        min-height: 65vh;
+    }
+
+    .home-cards,
+    .about,
+    .contact {
+        padding: 50px 7%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card,
+    .contact-card {
+        width: 100%;
+    }
+}
